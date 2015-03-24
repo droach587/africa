@@ -13,7 +13,7 @@ var mainJs = (function () {
 		    var length = methods.length;
 		    var console = (window.console = window.console || {});
 		
-		    while (length--) {
+		    while (length--) { 
 		        method = methods[length];
 		
 		        // Only stub undefined methods.
