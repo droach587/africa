@@ -1,0 +1,184 @@
+//  ==========================================================================
+//  Sass Modules for Style
+//  ==========================================================================
+	
+//  ==========================================================================
+//  Themeatic Styles Below
+//  ==========================================================================
+	
+	html, body{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		display: block;
+		float:left;
+	}
+
+	%full-width{
+		width: 100%;
+	}
+	
+	%float-left{
+		float: left;
+		position: relative;
+		display: block;
+	}
+	
+	%global-padding{
+		padding: 10px 185px;
+		@include box-sizing(border-box);
+	}
+	
+	
+	%float-right{
+		float: right;
+		position: relative;
+		display: block;
+	}
+	
+	.site-container{
+		@extend %float-left;
+		@extend %full-width;
+		height: 100%;
+	}
+	
+	.site-header{
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 999;
+		@extend %global-padding;
+		background: white;
+	}
+	
+	.site-heading{
+		@extend %float-left;
+		font: normal 35px $open-sans-cond-bold;
+		margin: 0;
+		padding: 0;
+		color: #51433a;
+	}
+	
+	.site-nav{
+		@extend %float-right;
+		ul{
+			@extend %float-right;
+			margin: 12px 0 0 0;
+			padding: 0;
+			li{
+				@extend %float-left;
+				text-transform: uppercase;
+				font: normal 20px $open-sans-cond-bold;
+				text-transform: uppercase;
+				margin-left: 40px;
+				a{
+					color: $brand-blue;
+					&:hover{
+						@include transition-duration(.2s);
+						@include transition-property(all);
+						color: darken($brand-blue, 10%);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	
+	.site-article{
+		top: 0;
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		min-height: 654px;
+		display: table;
+		@extend %global-padding;
+		.span_8{
+			float: right !important;
+			padding-left: 60px;
+		}
+		&.hero{
+			background: white image-url('hero-vertical.jpg') center center no-repeat;
+			@include background-size(cover);
+		}
+		.span_12{
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+		}
+		.mask{
+			position: fixed;
+			height: 100%;
+			width: 20%;
+			top: 0px;
+			left: 185px;
+			background: image-url('mask-image.png') center center no-repeat;
+			z-index: 9;
+			@include background-size(contain);
+		}
+		&.middle{
+			top: 100%;
+			z-index: 99;
+			background: white;
+		}
+		
+		&.footer{
+			top: 200%;
+			background: white image-url('hero-vertical-inv.jpg') center center no-repeat;
+			@include background-size(cover);
+		}
+		input[type="text"]{
+			font: normal 26px sans-serif;
+			border: 1px solid #bbb;
+			padding: 7px 10px;
+			margin-right: 10px;
+		}
+		input[type="text"] + .btn{
+			margin-top: 0px;
+		}
+		form{
+			margin-top: 20px;
+		}
+	}
+	
+	.article-main-heading{
+		@extend %float-left;
+		@extend %full-width;
+		margin: 10px 0;
+		color: #5d5d5d;
+		font: normal 68px/74px $open-sans-cond-bold;
+	}
+	
+	.article-sub-heading{
+		@extend %float-left;
+		@extend %full-width;
+		margin: 60px 0 0 0;
+		color: $brand-blue;
+		font: normal 36px $open-sans-cond-bold;
+		text-transform: uppercase;
+	}
+	
+	.standard-p{
+		font: normal 22px/32px $open-sans-regular;
+		color: #51433a;
+		margin: 10px 0;
+		padding: 0;
+		@extend %full-width;
+		@extend %float-left;
+	}
+	
+	.btn{
+		background: $brand-blue;
+		font: normal 22px $open-sans-bold;
+		color: white;
+		padding: 10px 25px;
+		margin-top: 15px;
+		display: inline-block;
+		@include border-radius(10px);
+		@include transition-duration(.2s);
+		@include transition-property(all);
+		&:hover{
+			background: darken($brand-blue, 10%);
+		}
+	}

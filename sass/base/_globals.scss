@@ -1,0 +1,56 @@
+//  ==========================================================================
+//  Globals
+//  ==========================================================================
+	
+	@mixin center-container($width, $minWidth){
+		float: left;
+		position: relative;
+		display: block;
+		width: #{$width}px;
+		min-width: #{$minWidth}px !important;
+		margin-left: -$width*.5+px;
+		left: 50%;
+	}
+	
+//  ==========================================================================
+//  Fonts
+//  ==========================================================================
+	
+	//Foundation
+	//FontAwesome
+	@import "../vendor/foundation/foundation-icons";
+	@import '../vendor/fontawesome/font-awesome';
+	
+	
+	@include font-face("foundation-icons", font-files("foundation-icons.eot","foundation-icons.ttf", "foundation-icons.woff"));
+	
+	@include font-face("open-sans-bold", font-files("OpenSans-Bold-webfont-webfont.eot","OpenSans-Bold-webfont-webfont.ttf", "OpenSans-Bold-webfont-webfont.woff"));
+	@include font-face("open-sans-cond-bold", font-files("OpenSans-CondBold-webfont.eot","OpenSans-CondBold-webfont.ttf", "OpenSans-CondBold-webfont.woff"));
+	@include font-face("open-sans-regular", font-files("opensans-regular-webfont-webfont.eot","opensans-regular-webfont-webfont.ttf", "opensans-regular-webfont-webfont.woff"));
+	
+	
+	//Default Font Families, Adjustments etc
+	$font-family-default: "Arial", "Helvetica", sans-serif !default;	
+	$open-sans-bold: "open-sans-bold", "Helvetica", sans-serif;
+	$open-sans-cond-bold: "open-sans-cond-bold", "Helvetica", sans-serif;
+	$open-sans-regular: "open-sans-regular", "Helvetica", sans-serif;
+	
+	$default-font-size: 		14px !default;
+	$default-light-height:		18px !default;
+
+//  ==========================================================================
+//  Default Sizing 
+//  ==========================================================================
+	
+	$default-min-width:			980px !default;
+	$default-min-height:		768px !default;
+
+//  ==========================================================================
+//  Colors
+//  ==========================================================================
+	
+	$brand-blue:				#2466c8;
+
+//  ==========================================================================
+//  Sprites, Image Refs
+//  ==========================================================================		
