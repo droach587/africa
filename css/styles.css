@@ -1817,10 +1817,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .fa-medium:before { content: ""; }
 
-@font-face { font-family: "foundation-icons"; src: url('/css/fonts/foundation-icons.eot?1427155042') format('embedded-opentype'), url('/css/fonts/foundation-icons.ttf?1427155042') format('truetype'), url('/css/fonts/foundation-icons.woff?1427155042') format('woff'); }
-@font-face { font-family: "open-sans-bold"; src: url('/css/fonts/OpenSans-Bold-webfont-webfont.eot?1427162700') format('embedded-opentype'), url('/css/fonts/OpenSans-Bold-webfont-webfont.ttf?1427162700') format('truetype'), url('/css/fonts/OpenSans-Bold-webfont-webfont.woff?1427162700') format('woff'); }
-@font-face { font-family: "open-sans-cond-bold"; src: url('/css/fonts/OpenSans-CondBold-webfont.eot?1427162700') format('embedded-opentype'), url('/css/fonts/OpenSans-CondBold-webfont.ttf?1427162700') format('truetype'), url('/css/fonts/OpenSans-CondBold-webfont.woff?1427162700') format('woff'); }
-@font-face { font-family: "open-sans-regular"; src: url('/css/fonts/opensans-regular-webfont-webfont.eot?1427162700') format('embedded-opentype'), url('/css/fonts/opensans-regular-webfont-webfont.ttf?1427162700') format('truetype'), url('/css/fonts/opensans-regular-webfont-webfont.woff?1427162700') format('woff'); }
+@font-face { font-family: "foundation-icons"; src: url('//css/fonts/foundation-icons.eot?1427155042') format('embedded-opentype'), url('//css/fonts/foundation-icons.ttf?1427155042') format('truetype'), url('//css/fonts/foundation-icons.woff?1427155042') format('woff'); }
+@font-face { font-family: "open-sans-bold"; src: url('//css/fonts/OpenSans-Bold-webfont-webfont.eot?1427162700') format('embedded-opentype'), url('//css/fonts/OpenSans-Bold-webfont-webfont.ttf?1427162700') format('truetype'), url('//css/fonts/OpenSans-Bold-webfont-webfont.woff?1427162700') format('woff'); }
+@font-face { font-family: "open-sans-cond-bold"; src: url('//css/fonts/OpenSans-CondBold-webfont.eot?1427162700') format('embedded-opentype'), url('//css/fonts/OpenSans-CondBold-webfont.ttf?1427162700') format('truetype'), url('//css/fonts/OpenSans-CondBold-webfont.woff?1427162700') format('woff'); }
+@font-face { font-family: "open-sans-regular"; src: url('//css/fonts/opensans-regular-webfont-webfont.eot?1427162700') format('embedded-opentype'), url('//css/fonts/opensans-regular-webfont-webfont.ttf?1427162700') format('truetype'), url('//css/fonts/opensans-regular-webfont-webfont.woff?1427162700') format('woff'); }
 .col { border: 0px solid transparent; float: left; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-background-clip: padding-box !important; -webkit-background-clip: padding-box !important; background-clip: padding-box !important; }
 
 @media screen and (min-width: 0px) { .col { margin-left: 0%; padding: 0 0.5%; }
@@ -1860,11 +1860,11 @@ html, body { width: 100%; height: 100%; position: relative; display: block; floa
 
 .site-article { top: 0; position: absolute; left: 0px; width: 100%; height: 100%; min-height: 654px; display: table; }
 .site-article .span_8 { float: right !important; padding-left: 60px; }
-.site-article.hero { background: white url('/img/hero-vertical.jpg?1427157426') center center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+.site-article.hero { background: white url('//img/hero-vertical.jpg?1427157426') center center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 .site-article .span_12 { display: table-cell; vertical-align: middle; float: none; }
-.site-article .mask { position: fixed; height: 100%; width: 20%; top: 0px; left: 185px; background: url('/img/mask-image.png?1427158600') center center no-repeat; z-index: 9; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; }
+.site-article .mask { position: fixed; height: 100%; width: 20%; top: 0px; left: 185px; background: url('//img/mask-image.png?1427158600') center center no-repeat; z-index: 9; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; }
 .site-article.middle { top: 100%; z-index: 99; background: white; }
-.site-article.footer { top: 200%; background: white url('/img/hero-vertical-inv.jpg?1427157864') center center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+.site-article.footer { top: 200%; background: white url('//img/hero-vertical-inv.jpg?1427157864') center center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 .site-article input[type="text"] { font: normal 26px sans-serif; border: 1px solid #bbb; padding: 7px 10px; margin-right: 10px; }
 .site-article input[type="text"] + .btn { margin-top: 0px; }
 .site-article form { margin-top: 20px; }
